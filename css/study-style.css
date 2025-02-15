@@ -733,4 +733,109 @@ code {
 @keyframes slideUp {
     0% { transform: translateY(20px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Styles responsive pour les notes */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        padding: 20px;
+    }
+
+    .alcohol-card {
+        padding: 15px;
+    }
+
+    .alcohol-info {
+        grid-template-columns: 1fr; /* Change en une seule colonne */
+        gap: 15px;
+    }
+
+    .info-block {
+        padding: 15px;
+    }
+
+    .rates-list li {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .marker {
+        padding: 3px 8px;
+        font-size: 0.9em;
+    }
+
+    .alcohol-meter {
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    .warning {
+        font-size: 0.9em;
+    }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    /* Ajout d'un bouton menu pour mobile */
+    .mobile-menu-btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        background: #3498db;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .alcohol-card {
+        padding: 12px;
+    }
+
+    .info-block {
+        padding: 12px;
+    }
+
+    .rates-list li {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+}
+
+/* Animation pour le menu mobile */
+@keyframes slideInMenu {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 } 

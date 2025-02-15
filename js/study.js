@@ -99,4 +99,33 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('#quiz.active') && typeof quizManager !== 'undefined') {
         quizManager.init();
     }
+
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const sidebar = document.querySelector('.sidebar');
+    const content = document.querySelector('.content');
+
+    // Afficher le bouton menu uniquement sur mobile
+    if (window.innerWidth <= 480) {
+        mobileMenuBtn.style.display = 'block';
+    }
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 480) {
+            mobileMenuBtn.style.display = 'block';
+        } else {
+            mobileMenuBtn.style.display = 'none';
+            sidebar.classList.remove('active');
+        }
+    });
+
+    mobileMenuBtn.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+    });
+
+    // Fermer le menu si on clique sur le contenu
+    content.addEventListener('click', function() {
+        if (sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+        }
+    });
 }); 
