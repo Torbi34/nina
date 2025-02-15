@@ -28,9 +28,15 @@
                 <i class="fas fa-car"></i>
                 <span>Priorités</span>
             </li>
+            <!-- Commenté temporairement
             <li data-section="quiz">
                 <i class="fas fa-question-circle"></i>
                 <span>Quiz</span>
+            </li>
+            -->
+            <li data-section="notes">
+                <i class="fas fa-sticky-note"></i>
+                <span>Notes pour Nina</span>
             </li>
         </ul>
         <a href="index.html" class="return-btn">
@@ -157,6 +163,42 @@
                     <div class="navigation-buttons">
                         <button class="prev-btn">Question précédente</button>
                         <button class="next-btn">Question suivante</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" class="study-section">
+            <h1>Notes pour Nina</h1>
+            <div class="card-container notes-container">
+                <div class="study-card note-card alcohol-card">
+                    <h3>Taux d'Alcoolémie Autorisés</h3>
+                    <div class="alcohol-meter">
+                        <div class="meter-scale">
+                            <div class="marker novice">0.2</div>
+                            <div class="marker regular">0.5</div>
+                        </div>
+                        <div class="meter-fill"></div>
+                    </div>
+                    <div class="alcohol-info">
+                        <div class="info-block novice">
+                            <h4>Jeune Conducteur (Permis Probatoire)</h4>
+                            <p>Maximum autorisé :</p>
+                            <ul class="rates-list">
+                                <li><span class="highlight">0,2 g/L</span> dans le sang</li>
+                                <li><span class="highlight">0,10 mg/L</span> dans l'air expiré</li>
+                            </ul>
+                            <p class="warning">Tolérance zéro pendant la période probatoire!</p>
+                        </div>
+                        <div class="info-block regular">
+                            <h4>Conducteur Expérimenté</h4>
+                            <p>Maximum autorisé :</p>
+                            <ul class="rates-list">
+                                <li><span class="highlight">0,5 g/L</span> dans le sang</li>
+                                <li><span class="highlight">0,25 mg/L</span> dans l'air expiré</li>
+                            </ul>
+                            <p class="warning">Au-delà = délit et sanctions sévères!</p>
+                        </div>
                     </div>
                 </div>
             </div>
