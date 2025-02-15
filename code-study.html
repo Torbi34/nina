@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code de la Route - Étude</title>
+    <link rel="stylesheet" href="css/study-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="nav-header">
+            <i class="fas fa-book"></i>
+            <h2>Code de la Route</h2>
+        </div>
+        <ul class="nav-links">
+            <li data-section="introduction" class="active">
+                <i class="fas fa-home"></i>
+                <span>Introduction</span>
+            </li>
+            <li data-section="signalisation">
+                <i class="fas fa-traffic-light"></i>
+                <span>Signalisation</span>
+            </li>
+            <li data-section="priorites">
+                <i class="fas fa-car"></i>
+                <span>Priorités</span>
+            </li>
+            <li data-section="quiz">
+                <i class="fas fa-question-circle"></i>
+                <span>Quiz</span>
+            </li>
+        </ul>
+        <a href="index.html" class="return-btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Retour au menu</span>
+        </a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <section id="introduction" class="study-section active">
+            <h1>Introduction</h1>
+            <div class="card-container">
+                <div class="study-card">
+                    <h3>Introduction</h3>
+                    <p>
+                        Bienvenue dans notre étude sur le code de la route. Nous allons explorer les différents panneaux de signalisation, les règles de priorité et les quiz pour tester vos connaissances.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="signalisation" class="study-section">
+            <h1>Signalisation</h1>
+            <div class="card-container">
+                <div class="study-card">
+                    <h3>Les Panneaux de Signalisation</h3>
+                    <p>
+                        Les panneaux de signalisation sont des indicateurs visuels utilisés pour informer les conducteurs de la réglementation routière. Ils sont classés en trois catégories principales :
+                    </p>
+                    <ul>
+                        <li>Panneaux de danger</li>
+                        <li>Panneaux d'interdiction</li>
+                        <li>Panneaux d'obligation</li>
+                    </ul>
+                </div>
+
+                <div class="study-card">
+                    <h3>Panneaux de Danger</h3>
+                    <div class="sign-grid">
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094216.png" alt="Passage piéton">
+                            <p>Passage piéton</p>
+                        </div>
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094239.png" alt="Virage dangereux à droite">
+                            <p>Virage dangereux à droite</p>
+                        </div>
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094305.png" alt="Intersection dangereuse">
+                            <p>Intersection dangereuse</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="study-card">
+                    <h3>Panneaux d'Interdiction</h3>
+                    <div class="sign-grid">
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094317.png" alt="Sens interdit">
+                            <p>Sens interdit</p>
+                        </div>
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094333.png" alt="Limitation 30 km/h">
+                            <p>Limitation 30 km/h</p>
+                        </div>
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094344.png" alt="Stop">
+                            <p>Stop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="study-card">
+                    <h3>Panneaux d'Obligation</h3>
+                    <div class="sign-grid">
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094358.png" alt="Obligation de tourner à droite">
+                            <p>Obligation de tourner à droite</p>
+                        </div>
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094413.png" alt="Piste cyclable obligatoire">
+                            <p>Piste cyclable obligatoire</p>
+                        </div>
+                        <div class="sign-item">
+                            <img src="code-route/Capture d'écran 2025-02-15 094425.png" alt="Cédez le passage">
+                            <p>Cédez le passage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="priorites" class="study-section">
+            <h1>Les Règles de Priorité</h1>
+            <div class="card-container">
+                <div class="study-card interactive">
+                    <h3>Intersection avec priorité à droite</h3>
+                    <div class="intersection-demo">
+                        <!-- L'animation sera injectée ici par JavaScript -->
+                    </div>
+                    <button class="demo-btn">Voir l'animation</button>
+                    <p class="demo-explanation">
+                        Dans cette situation, la voiture bleue venant de la droite est prioritaire.
+                        La voiture rouge doit la laisser passer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="study-section">
+            <h1>Quiz Code de la Route</h1>
+            <div class="quiz-container">
+                <div class="quiz-navigation">
+                    <input type="number" id="questionJump" min="1" max="100" placeholder="Aller à la question...">
+                    <button id="jumpToQuestion">Aller à la question</button>
+                </div>
+                <div class="question-card">
+                    <div class="question-number"></div>
+                    <p class="question"></p>
+                    <div class="answers"></div>
+                    <button class="validate-btn">Valider</button>
+                    <div class="explanation"></div>
+                    <div class="navigation-buttons">
+                        <button class="prev-btn">Question précédente</button>
+                        <button class="next-btn">Question suivante</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/study.js"></script>
+</body>
+</html> 

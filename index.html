@@ -15,36 +15,54 @@
         </header>
 
         <section class="message">
-            <div class="floating-hearts">
-                <span>❤️</span>
-                <span>💝</span>
-                <span>💖</span>
-                <span>💗</span>
-            </div>
-            
             <div class="heart-container">
                 <div class="heart"></div>
             </div>
-            <p class="love-message">Clique sur le cœur pour voir un message spécial</p>
-            <div class="hidden-message">
-                Je t'aime Nina! ❤️
+            <div class="love-letter">
+                <p>Ma chérie,</p>
+                <p>Malgré tous les hauts et les bas que nous avons traversés, malgré les moments difficiles et les épreuves, mon amour pour toi n'a fait que grandir chaque jour.</p>
+                <p>Tu es celle qui illumine mes journées, celle qui me fait sourire même dans les moments les plus sombres. Chaque instant passé à tes côtés est un cadeau précieux.</p>
+                <p>Notre histoire n'est peut-être pas parfaite, mais elle est la nôtre, et je ne changerais rien de notre parcours car il nous a menés là où nous sommes aujourd'hui.</p>
+                <p>Je t'aime tellement, et cet amour grandit chaque jour davantage. Tu es mon présent et mon futur, ma meilleure amie, mon amour.</p>
+                <p>Pour toujours tien ❤️</p>
             </div>
         </section>
 
         <section class="photos">
-            <h2>Nos Moments Précieux</h2>
-            <div class="photo-gallery">
+            <h2>Nos Plus Beaux Moments</h2>
+            <div class="gallery-preview">
                 <div class="photo-frame">
-                    <div class="placeholder">Photo 1</div>
+                    <img src="nina/image15.png">
                 </div>
                 <div class="photo-frame">
-                    <div class="placeholder">Photo 2</div>
+                    <img src="nina/image16.png">
                 </div>
                 <div class="photo-frame">
-                    <div class="placeholder">Photo 3</div>
+                    <img src="nina/image13.png">
                 </div>
             </div>
+            <button class="view-gallery-btn" onclick="openGallery()">
+                <i class="fas fa-images"></i>
+                Voir toutes nos photos
+            </button>
         </section>
+
+        <!-- Modal Galerie Photos -->
+        <div class="gallery-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Notre Histoire en Photos</h3>
+                <div class="gallery-grid">
+                  
+                        <img src="code-route/Capture d'écran 2025-02-15 094216.png" alt="Nina et moi">
+                  
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
         <section class="surprise">
             <button class="gift-button">
@@ -52,10 +70,20 @@
                 Ouvre ton cadeau
             </button>
             <div class="surprise-message hidden">
-                <div class="sparkles">✨✨✨</div>
-                <p>Ton prince t'attend en bas des escaliers avec des fleurs</p>
-                <div class="sparkles">✨✨✨</div>
+                <div class="sparkle-container">
+                    <div class="sparkle-line left"></div>
+                    <p>Ton prince t'attend en bas des escaliers avec des fleurs</p>
+                    <div class="sparkle-line right"></div>
+                </div>
             </div>
+        </section>
+
+        <section class="study-section">
+            <button class="study-btn" onclick="window.location.href='code-study.html'">
+                <i class="fas fa-code"></i>
+                <span>Réviser ton code</span>
+                <div class="btn-effect"></div>
+            </button>
         </section>
     </div>
     <script src="js/script.js"></script>
